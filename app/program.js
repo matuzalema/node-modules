@@ -1,5 +1,6 @@
-process.stdin.setEncoding('utf-8');
+var os = require('os');
 
+process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
     var nodeInf = process.versions.node;
     process.stdout.write('Node version: ' + nodeInf);

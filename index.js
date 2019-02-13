@@ -1,4 +1,5 @@
-var OSinfo = require('./modules/OSinfo'); 
+var OSinfo = require('./modules/OSinfo');
+var os = require('os');
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
@@ -19,7 +20,7 @@ process.stdin.on('readable', function() {
             default:
                 process.stderr.write('Wrong instruction!\n');
         }
-        emitter.emit('afterCommand');
+        // emitter.emit('afterCommand');
     }
 });
 
