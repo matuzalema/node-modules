@@ -6,7 +6,7 @@ function getTime(){
 	var hours = (minutes/60).toFixed();
 	seconds = (seconds%60);
 
-	console.log(hours + ' hours ' + minutes + ' minutes and ' + seconds + ' seconds');
+	return hours + ' hours ' + minutes + ' minutes and ' + seconds + ' seconds';
 }
 
 exports.print = getTime;
